@@ -4,3 +4,16 @@
 # Например:
 #   "Ботинок" -> False ("и" следует после "т")
 #   "Борщ" -> True (все символы расположены в алфавитном порядке)
+
+
+----------------------------------------
+a = 'Борщ' 
+b = 'Ботинок' 
+def SortLetters(word): 
+    for i in range(len(word) - 1): 
+        if word[i] > word[i+1]: 
+            return False 
+    return True 
+print(SortLetters(b))  
+print(SortLetters(a))
+---------------------------------------
